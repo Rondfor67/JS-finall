@@ -1,0 +1,65 @@
+/* osnovnye cveta i razmery po vsemu saitu */
+:root{
+  --bg: #0b0b0d;
+  --block: #141418;
+  --border: #2a2a33;
+  --text: #ffffff;
+  --muted: #b7b7c2;
+  --red: #6e0009;
+
+  --radius: 14px;
+  --container: 1100px;
+}
+
+/* obshiy fon, shrift i cvet teksta */
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex: 1;
+}
+/* ogranichenie shiriny kontenta po centru */
+.container{
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+/* otstupy mezhdu bolshimi blokami */
+.section{
+  padding: 36px 0;
+}
+
+/* seryy tekst dlya podpisei */
+.muted{
+  color: var(--muted);
+}
+
+/* ubrali standarnye otstupy */
+h1, h2, h3{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+/* ssylki bez podcherkivaniya */
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ssylki v futere i tekste */
+.link{
+  color: var(--muted);
+}
+
+.link:hover{
+  color: var(--text);
+}

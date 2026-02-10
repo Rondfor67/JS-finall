@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Еда и бар — NightScreen</title>
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark"></span>
+      <span class="brand__text">NightScreen</span>
+    </a>
+
+    <nav class="nav">
+      <a class="nav__link" href="../index.html">Главная</a>
+      <a class="nav__link" href="catalog.html">Афиша</a>
+      <a class="nav__link is-active" href="snacks.html">Еда</a>
+      <a class="nav__link" href="about.html">О кинотеатре</a>
+      <a class="nav__link" href="contacts.html">Контакты</a>
+    </nav>
+
+    <a class="btn btn--primary" href="catalog.html">Купить билет</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+
+    <div class="section-head">
+      <h1 class="section-title">Еда и бар</h1>
+      <p class="section-subtitle muted">Снэки • Напитки • Бургеры</p>
+    </div>
+
+    <div class="hero-actions">
+      <button id="cheap-btn" class="btn btn--ghost">До 1000 ₸</button>
+      <button id="reset-btn" class="btn btn--ghost">Сбросить заказ</button>
+    </div>
+
+    <!-- sneky -->
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Снэки</h2>
+        <p class="section-subtitle muted">Попкорн, начос, сладкое</p>
+      </div>
+
+      <div class="grid grid--cards" id="snacks-container"></div>
+    </section>
+
+    <!-- napitky -->
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Напитки</h2>
+        <p class="section-subtitle muted">Газировка, кофе, сок</p>
+      </div>
+
+      <div class="grid grid--cards" id="drinks-container"></div>
+    </section>
+
+    <!-- burgery -->
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Бургеры</h2>
+        <p class="section-subtitle muted">Сытно и горячо</p>
+      </div>
+
+      <div class="grid grid--cards" id="burgers-container"></div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="muted">© NightScreen, 2026</p>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

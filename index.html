@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кинотеатр — NightScreen</title>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="На главную">
+        <span class="brand__mark"></span>
+        <span class="brand__text">NightScreen</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link is-active" href="index.html">Главная</a>
+        <a class="nav__link" href="pages/catalog.html">Афиша</a>
+        <a class="nav__link" href="pages/snacks.html">Еда и напитки</a>
+        <a class="nav__link" href="pages/about.html">О кинотеатре</a>
+        <a class="nav__link" href="pages/contacts.html">Контакты</a>
+      </nav>
+
+      <a class="btn btn--primary" href="pages/catalog.html">Купить билет</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">Афиша кино на сегодня</h1>
+          <p class="hero-text">
+            Выбирай фильм, смотри информацию и переходи к схеме зала.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="pages/catalog.html">Открыть афишу</a>
+            <a class="btn btn--ghost" href="pages/contacts.html">Уточнить расписание</a>
+          </div>
+
+          <ul class="chips" aria-label="Преимущества">
+            <li class="chip">Комфортные залы</li>
+            <li class="chip">2D / 3D</li>
+            <li class="chip">Удобные места</li>
+            <li class="chip">Быстрый выбор</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" role="img" aria-label="Постер-коллаж"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">В прокате</h2>
+          <p class="section-subtitle">Популярные фильмы этой недели</p>
+        </div>
+
+       <div class="grid grid--cards">
+  <article class="card card--movie">
+    <a class="card__media" href="pages/catalog.html#seats-1">
+      <img src="images/naf.jpg" alt="Постер Пять ночей с Фредди 2" />
+      <span class="badge">18+</span>
+    </a>
+    <div class="card__body">
+      <h3 class="card__title">Пять ночей с Фредди 2</h3>
+      <p class="card__meta">ужасы • 104мин</p>
+      <div class="card__footer">
+        <span class="price">от 1900 ₸</span>
+        <button class="btn btn--small btn--ghost open-hall">
+  Схема зала
+</button>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="card card--movie">
+    <a class="card__media" href="pages/catalog.html#seats-2">
+      <img src="images/deadpool.webp" alt="Постер Дэдпул" />
+      <span class="badge">18+</span>
+    </a>
+    <div class="card__body">
+      <h3 class="card__title">Дэдпул</h3>
+      <p class="card__meta">боевик, фантастика • 119мин</p>
+      <div class="card__footer">
+        <span class="price">от 2100 ₸</span>
+       <button class="btn btn--small btn--ghost open-hall">
+  Схема зала
+</button>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="card card--movie">
+    <a class="card__media" href="pages/catalog.html#seats-3">
+      <img src="images/zoo.jpg" alt="Постер Зверополис 2" />
+      <span class="badge">6+</span>
+    </a>
+    <div class="card__body">
+      <h3 class="card__title">Зверополис 2</h3>
+      <p class="card__meta">мультфильм • 2ч 18м</p>
+      <div class="card__footer">
+        <span class="price">от 2500 ₸</span>
+        <button class="btn btn--small btn--ghost open-hall">
+  Схема зала
+</button>
+
+      </div>
+    </div>
+  </article>
+</div>
+
+
+        <div class="section-actions" style="margin-top: 14px;">
+          <a class="btn btn--primary" href="pages/catalog.html">Смотреть всю афишу</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© NightScreen, 2026</p>
+      <div class="footer-links">
+        <a class="link" href="pages/contacts.html">Контакты</a>
+        <a class="link" href="pages/about.html">О кинотеатре</a>
+      </div>
+    </div>
+  </footer>
+  <!-- schema zala -->
+<div class="hall-modal" id="hall-modal">
+  <div class="hall-modal__overlay"></div>
+
+  <div class="hall-modal__content">
+    <button class="hall-modal__close" id="hall-close">✕</button>
+
+    <img src="images/scheme.jpg" alt="Схема зала" class="hall-modal__image">
+  </div>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

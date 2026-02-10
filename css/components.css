@@ -1,0 +1,518 @@
+/* logo + nazvanie saita v shapke */
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.brand__mark{
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background: var(--red);
+}
+
+/* ssylki v menu */
+.nav__link{
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.nav__link:hover{
+  color: var(--text);
+}
+
+/* aktivnaya stranica */
+.nav__link.is-active{
+  color: var(--text);
+  border: 1px solid var(--red);
+}
+
+/* obshiy vid knopok */
+.btn{
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+.btn:hover{
+  border-color: var(--red);
+}
+
+/* glavnie knopki */
+.btn--primary{
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.btn--primary:hover{
+  opacity: 0.9;
+}
+
+/* prozrachnaya knopka */
+.btn--ghost{
+  background: transparent;
+}
+
+/* malenkiye knopki */
+.btn--small{
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* zagolovok na glavnom ekrane */
+.hero-title{
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+/* tekst pod zagolovkom */
+.hero-text{
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+/* knopki pod zagolovkom */
+.hero-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* obshaya kartochka */
+.card{
+  background: var(--block);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* blok s kartinkoy */
+.card__media{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* znachok na kartinke */
+.badge{
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #101014;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* vnutri kartochki */
+.card__body{
+  padding: 12px;
+}
+
+/* zagolovok kartochki */
+.card__title{
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* opisanie pod zagolovkom */
+.card__meta{
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card__desc{
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* niz kartochki s cenoy i knopkoy */
+.card__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* cena */
+.price{
+  font-weight: 700;
+}
+
+/* seryy blok s tekstom (important, note i t.d.) */
+.panel{
+  background: var(--block);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+
+.panel__title{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.panel__text{
+  color: var(--muted);
+}
+
+/* forma otpravki */
+.form{
+  display: grid;
+  gap: 12px;
+}
+
+.field{
+  display: grid;
+  gap: 6px;
+}
+
+.field__label{
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* inputy */
+.input{
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #0f0f13;
+  color: var(--text);
+}
+
+.input:focus{
+  outline: none;
+  border-color: var(--red);
+}
+
+/* checkbox */
+.check{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.check__box{
+  accent-color: var(--red);
+}
+
+/* podskazki */
+.hint{
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* modal okno */
+.modal{
+  position: fixed;
+  inset: 0;
+  display: none;
+  padding: 16px;
+}
+
+.modal:target{
+  display: block;
+}
+
+.modal__overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal__content{
+  position: relative;
+  margin: 60px auto 0;
+  width: min(900px, 100%);
+  background: var(--block);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+
+.modal__head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.modal__close{
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.modal__close:hover{
+  border-color: var(--red);
+}
+
+.modal__text{
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.modal__img{
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+/* poisk i filtry v afishe */
+.search{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #0f0f13;
+}
+
+.search__icon{
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.search__input{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+}
+
+/* zhanry */
+.genres{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.genre{
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.genre:hover{
+  border-color: var(--red);
+  color: var(--text);
+}
+
+.genre.is-active{
+  border-color: var(--red);
+  color: var(--text);
+}
+
+/* stroka filma v afishe */
+.movie{
+  display: grid;
+  grid-template-columns: 160px 1fr 170px;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--block);
+}
+
+.movie__poster{
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.movie__info{
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+
+.movie__head{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.movie__title{
+  font-size: 20px;
+}
+
+.tag{
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+}
+
+.tag--muted{
+  color: var(--muted);
+}
+
+.movie__meta,
+.movie__desc{
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* vremya seansov */
+.times{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.time{
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.time:hover{
+  border-color: var(--red);
+}
+
+.movie__side{
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.movie__price{
+  font-weight: 700;
+}
+
+/* kartochki edy */
+.card--snack .card__media{
+  height: 300px;
+}
+
+.card--snack img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* kartochki filmov */
+.card--movie .card__media{
+  aspect-ratio: 2 / 3;
+}
+
+.card--movie img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #0f0f13;
+}
+
+/* modalka so skhemoy zala */
+.hall-modal{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.hall-modal.active{
+  display: block;
+}
+
+.hall-modal__overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.hall-modal__content{
+  margin: 60px auto;
+  max-width: 900px;
+  background: #0f0f13;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.hall-modal__image{
+  width: 100%;
+  border-radius: 12px;
+}
+
+.hall-modal__close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* adaptiv */
+@media (max-width: 900px){
+  .movie{
+    grid-template-columns: 120px 1fr;
+  }
+  .movie__side{
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px){
+  .movie{
+    grid-template-columns: 1fr;
+  }
+  .movie__side{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* tekst na stranice o kino */
+.about-text{
+  max-width: 700px;
+  margin-bottom: 16px;
+  color: var(--muted);
+}
+
+/* galereya s kartinkami */
+.about-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* kartinki v galeree */
+.about-gallery img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* adaptiv dlya telefonov */
+@media (max-width: 540px){
+  .about-gallery{
+    grid-template-columns: 1fr;
+  }
+
+  .about-gallery img{
+    height: 220px;
+  }
+}

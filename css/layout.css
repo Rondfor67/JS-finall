@@ -1,0 +1,177 @@
+/* shapka saita */
+.site-header{
+  border-bottom: 1px solid var(--border);
+  background: #0f0f13;
+}
+
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+}
+
+/* navigaciya */
+.nav{
+  display: flex;
+  gap: 10px;
+}
+
+
+/* hero blok */
+.hero{
+  padding: 34px 0;
+}
+
+.hero-inner{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+
+/* setki */
+.grid{
+  display: grid;
+  gap: 14px;
+}
+
+/* kartochki */
+.grid--cards{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* zagolovki sekciy */
+.section-head{
+  margin-bottom: 14px;
+}
+
+
+/* stranica kontaktov */
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+
+/* stranica o kino */
+.info-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+
+/* podval */
+.site-footer{
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+  background: #0f0f13;
+}
+
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ssylki v podvale */
+.footer-links{
+  display: flex;
+  gap: 12px;
+}
+
+
+/* stranica afishi */
+.catalog-top{
+  display: grid;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.catalog-tools{
+  display: grid;
+  gap: 10px;
+}
+
+/* spisok filmov */
+.movie-list{
+  display: grid;
+  gap: 12px;
+}
+
+
+/* stranica s edoy */
+.snacks-hero{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 14px;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+/* filtry i knopki */
+.snacks-hero__chips{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* kartochki edy */
+.snacks-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+
+/* adaptiv dlya planshetov */
+@media (max-width: 900px){
+
+  /* eda */
+  .snacks-hero{
+    grid-template-columns: 1fr;
+  }
+
+  .snacks-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* kartochki */
+  .grid--cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* kontakty */
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* informaciya */
+  .info-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* adaptiv dlya telefonov */
+@media (max-width: 540px){
+
+  .snacks-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .grid--cards{
+    grid-template-columns: 1fr;
+  }
+
+  /* menyu */
+  .nav{
+    flex-wrap: wrap;
+  }
+}

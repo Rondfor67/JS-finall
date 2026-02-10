@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — NightScreen</title>
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark"></span>
+      <span class="brand__text">NightScreen</span>
+    </a>
+
+    <nav class="nav">
+      <a class="nav__link" href="../index.html">Главная</a>
+      <a class="nav__link" href="catalog.html">Афиша</a>
+      <a class="nav__link" href="snacks.html">Еда</a>
+      <a class="nav__link" href="about.html">О кинотеатре</a>
+      <a class="nav__link is-active" href="contacts.html">Контакты</a>
+    </nav>
+
+    <a class="btn btn--primary" href="catalog.html">Афиша</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+
+    <h1 class="page-title">Контакты</h1>
+    <p class="page-subtitle">Свяжитесь с нами</p>
+
+    <section class="contact-grid">
+
+      <article class="panel">
+        <h2 class="panel__title">Контакты</h2>
+        <p class="panel__text">
+          г. Астана<br>
+          Телефон: +7 775 133 17 27<br>
+          Email: Goha_Kroha@gmail.com
+        </p>
+      </article>
+
+      <section class="panel">
+        <h2 class="panel__title">Обратная связь</h2>
+
+        <form class="form">
+
+          <label class="field">
+            <span class="field__label">Имя</span>
+            <input id="name" class="input" type="text">
+          </label>
+
+          <label class="field">
+            <span class="field__label">Email</span>
+            <input id="email" class="input" type="text">
+          </label>
+
+          <label class="check">
+            <input id="agree" class="check__box" type="checkbox">
+            <span>Согласен(а) на обработку данных</span>
+          </label>
+
+          <button class="btn btn--primary" type="submit">
+            Отправить
+          </button>
+
+        </form>
+      </section>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="muted">© NightScreen, 2026</p>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
